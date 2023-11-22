@@ -26,6 +26,7 @@ app.use(
     saveUninitialized: false, // don't create session until something stored.
     cookie: {
       secure: false, // This will only work if you have https enabled!
+      sameSite: true, // the request is made to the same origin (website) that set the cookie (help to protect against XSS attacks).
       maxAge: oneDay, // cookie expiry time.
     },
   })

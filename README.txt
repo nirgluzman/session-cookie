@@ -20,5 +20,8 @@ https://expressjs.com/en/resources/middleware/session.html
 
 
 *** Compatible Session Stores ***
+By default, the sessions are stored in MemoryStore.
+This is not recommended for production use. Instead, it's advisable to use alternative session stores for production. 
+https://www.npmjs.com/package/express-session#compatible-session-stores
 https://github.com/expressjs/session
 
