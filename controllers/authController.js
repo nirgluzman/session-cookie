@@ -1,11 +1,15 @@
+import validator from 'express-validator';
+const { validationResult } = validator;
+
 // User login
 const loginUser = (req, res, next) => {
   // retrieve the email and password from the body
   const { email, password } = req.body;
 
   // if the email and password are not valid, return an error
-  if (!email || !password) {
-    return res.status(400).send({ message: 'Invalid email or password' });
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
   }
 
   console.log('Login successful');

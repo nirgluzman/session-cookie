@@ -35,3 +35,10 @@ https://stackoverflow.com/questions/76256585/how-to-store-an-express-session-in-
 Sessions: https://www.quora.com/What-is-a-session-in-a-Web-Application
 Cookies: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 Express-session Official Docs: https://github.com/expressjs/session
+
+
+--------------------------------------------
+
+
+*** Express Validator ***
+https://express-validator.github.io/docs/
