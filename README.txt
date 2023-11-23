@@ -29,3 +29,9 @@ https://github.com/expressjs/session
 *** Storing sessions with in MongoDB ***
 https://www.npmjs.com/package/connect-mongodb-session
 https://stackoverflow.com/questions/76256585/how-to-store-an-express-session-in-a-mongodb-database-using-a-controller
+
+
+*** Additional resources ***
+Sessions: https://www.quora.com/What-is-a-session-in-a-Web-Application
+Cookies: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+Express-session Official Docs: https://github.com/expressjs/session
