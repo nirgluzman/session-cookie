@@ -21,8 +21,14 @@ const app = express();
 const store = new MongoDBStore({
   uri: process.env.MONGODB_URI,
   collection: 'sessions',
-  expires: 1000 * 60 * 60 * 24 * 7, // 7 days
+  expires: 1000 * 60 * 1, // expiration in milliseconds.
 });
+
+// add listner to 'error' event.
+store.on('error', (error) => console.error('MongoDB connection error:', error));
+
+// add listner to 'connected' event.
+store.on('connect', () => console.log('Connected to MongoDB'));
 
 // middleware to parse incoming JSON requests and puts the parsed data in req.body
 app.use(express.json());
@@ -31,18 +37,17 @@ app.use(express.json());
 app.use(cookieParser());
 
 // middleware to parse sessions.
-const oneDay = 1000 * 60 * 60 * 24;
 app.use(
   session({
     name: 'session-id', // the name of the session id cookie.
     secret: 'my secret', // a secret string used to sign the session ID cookie.
-    resave: false, // don't save session if unmodified.
-    saveUninitialized: false, // don't create session until something stored.
+    resave: false, // don't save session if unmodified, https://www.npmjs.com/package/express-session#resave
+    saveUninitialized: false, // don't create session until something stored, https://www.npmjs.com/package/express-session#saveuninitialized
     store, // session store.
     cookie: {
       secure: false, // This will only work if you have https enabled!
       // sameSite: true, // the request is made to the same origin (website) that set the cookie (help to protect against XSS attacks).
-      maxAge: oneDay, // cookie expiry time.
+      maxAge: 1000 * 60 * 1, // cookie expiry time (in msec).
     },
   })
 );
