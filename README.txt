@@ -46,3 +46,4 @@ https://express-validator.github.io/docs/
 
 *** Asynchronous data validation ***
 https://medium.com/developer-rants/asynchronous-data-validation-in-express-285967457467
+https://www.udemy.com/course/nodejs-the-complete-guide/learn/lecture/12087614?%24deeplink_path=udemy%3A%2F%2Fdiscover%3Fredirect%3Ddiscussions%26courseId%3D1879018%26discussionId%3D5857278&~channel=email&~stage=published&utm_campaign=email&utm_medium=email&utm_source=sendgrid.com&_branch_match_id=1256351992097136193&_branch_referrer=H4sIAAAAAAAAA02P3UrEMBCFnya9a%2Bu2rq1CEEEXvBF8gpJNZpu4%2BSOTWHx7J7uiQmAy35lkztE5R3zo%2B6LAfXUixs4af%2B7fYHsvgNkE%2F8iGWwUQK1%2BiyJpfZtn4xIYDHWVQhk9IbDwkUCaBzGx8rrQg0ntkw50MJSG8KhJ283R%2Fs5sJ%2Fo1chP28n4Zpbtj0IrXwHiwHJ4ytALNYgcdytAY1qIYsnYS1RyHPS0mW65ri19G2bd01jwyO%2But2uvig4APbrKElJVrI0K7FqKpZEMlTbUp2ixQuCrP6HwcVOcpW3D%2BA9KsEjuDVmoyqu74Bja%2FJHk0BAAA%3D#questions/5857278/
