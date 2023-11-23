@@ -28,7 +28,7 @@ const store = new MongoDBStore({
 store.on('error', (error) => console.error('MongoDB connection error:', error));
 
 // add listner to 'connected' event.
-store.on('connect', () => console.log('Connected to MongoDB'));
+store.on('connected', () => console.log('Connected to MongoDB'));
 
 // middleware to parse incoming JSON requests and puts the parsed data in req.body
 app.use(express.json());
