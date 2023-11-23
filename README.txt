@@ -42,3 +42,7 @@ Express-session Official Docs: https://github.com/expressjs/session
 
 *** Express Validator ***
 https://express-validator.github.io/docs/
+
+
+*** Asynchronous data validation ***
+https://medium.com/developer-rants/asynchronous-data-validation-in-express-285967457467

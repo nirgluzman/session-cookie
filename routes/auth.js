@@ -10,16 +10,16 @@ const router = express.Router();
 router.post(
   '/login',
   [
-    check('email')
+    check('email', 'Email is not valid')
       .isEmail()
-      .withMessage('Email is not valid')
       .custom((value, { req }) => {
         if (value === 'test@test.com') {
           throw new Error('This email address is forbidden.');
         }
         return true;
-      }),
-    body('password', 'Password is invalid').isLength({ min: 6 }).isAlphanumeric(),
+      })
+      .normalizeEmail({ all_lowercase: true }),
+    body('password', 'Password is invalid').isLength({ min: 6 }).isAlphanumeric().trim(),
   ],
   authController.loginUser
 );
