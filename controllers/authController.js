@@ -12,7 +12,7 @@ const loginUser = (req, res, next) => {
     return res.status(400).json({ errors: errors.array() });
   }
 
-  console.log('Login successful!');
+  console.log('Login successful');
 
   // if the email and password are valid, set the isLogin attribute in session to true.
   req.session.isLogin = true;
