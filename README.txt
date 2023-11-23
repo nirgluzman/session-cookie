@@ -2,6 +2,26 @@ GitHub repo:
 git@github.com:nirgluzman/session-cookie.git
 
 
+*** Debug in VSCode with nodemon ***
+https://stackoverflow.com/questions/53352303/how-to-debug-a-nodemon-project-in-vscode
+https://www.udemy.com/course/nodejs-the-complete-guide/learn/lecture/12087614#questions/20864814
+
+
+*** Dotenv ***
+https://www.udemy.com/course/nodejs-the-complete-guide/learn/lecture/12087614#questions/20880268
+When we use Docker, we can pass environment variables directly to the container at runtime without the need for a separate .env file. 
+This is typically done using the -e or --env option when running the docker run command. 
+For example: docker run -e KEY1=value1 -e KEY2=value2 my-node-app
+In this way, we can set environment variables directly in the Docker run command or through a configuration system, 
+and these values will be available to our Node.js application without the need for a package like dotenv.
+
+The reason for this is that the environment inside the Docker container is a separate environment from the host system, 
+and Docker provides a mechanism to pass environment variables from the host to the container.
+
+In contrast, when we run our Node.js application locally without Docker, we might use a .env file to manage environment variables conveniently. 
+The dotenv package helps load these variables into process.env when running the application locally.
+
+
 *** Cookies ***
 A cookie is a key-value pair that is stored in the browser.
 The browser attaches cookies to every HTTP request that is sent to the server.
