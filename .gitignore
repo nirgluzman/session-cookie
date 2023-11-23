@@ -1,3 +1,5 @@
-# Dependency directories
+# dependency directories
 node_modules
 
+# environment variable
+.env
